@@ -1,0 +1,14 @@
+{
+  "name": "caesar-cipher",
+  "version": "1.0.0",
+  "description": "caesar cipher cli tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Artem Shustov",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
