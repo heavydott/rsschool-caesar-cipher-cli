@@ -2,7 +2,7 @@ const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 const ENCRYPTION = 'encode';
 
 const encrypt = (text, shift, mode = ENCRYPTION) => {
-    if(mode !== ENCRYPTION) {
+    if(mode != ENCRYPTION) {
         shift *= -1;
     }
     return text.split('').map(letter => {
@@ -16,6 +16,7 @@ const encrypt = (text, shift, mode = ENCRYPTION) => {
                 shiftI += alphabet.length;
             }
             let newLetter = alphabet[shiftI];
+            // console.log(letter, shift, i, shiftI, newLetter);
             if(isUpper) {
                 newLetter = newLetter.toUpperCase();
             }
